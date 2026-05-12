@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
 <script>// ── REISEPLAN KONFIGURATION ────────────────────────────────────────────────
 // Startdatum hier ändern (YYYY, MM-1, DD) — Monate 0-basiert: Mai = 4 (abgeändert!)
-const START_DATE = new Date(2026, 5, 29); // 30. Mai 2026
+const START_DATE = new Date(2026, 4, 29); // 30. Mai 2026
 </script>
 <style>
   :root {
@@ -1139,7 +1139,7 @@ const WEEKDAYS_DE = ['So','Mo','Di','Mi','Do','Fr','Sa'];
 const MONTHS_DE   = ['Jan.','Feb.','März','Apr.','Mai','Juni','Juli','Aug.','Sep.','Okt.','Nov.','Dez.'];
 
 function formatDate(d) {
-  return WEEKDAYS_DE[d.getDay()] + ', ' + d.getDate() + '. ' + MONTHS_DE[d.getMonth()-1] + ' ' + d.getFullYear();
+  return WEEKDAYS_DE[d.getDay()] + ', ' + d.getDate() + '. ' + MONTHS_DE[d.getMonth()] + ' ' + d.getFullYear();
 }
 
 function addDays(date, n) {
